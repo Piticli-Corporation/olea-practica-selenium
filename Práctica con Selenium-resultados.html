@@ -1,0 +1,1107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style>
+.failed {color: red; background-color: #ffcccc;}
+.passed {color: green; background-color: #ccffcc;}
+.done {color: #404040; background-color: #ccffcc;}
+.comment {color: #404040; background-color: #d0d0d0;}
+body, table { font-family: Verdana, Arial, sans-serif; font-size: 12pt; }
+table { border-collapse: collapse; border: 1px solid #ccc; }
+th, td { padding-left: 0.3em; padding-right: 0.3em; border: 1px solid #ccc; }
+#suiteSummaryTable thead { font-size: 14pt; font-weight: 800; }
+.test_case thead { font-size: 14pt; font-weight: 400; }
+</style>
+</head>
+<body>
+<table id="suiteSummaryTable" class="selenium">
+<thead><tr class="passed"><td>Test Suite: Práctica con Selenium.html</td></tr></thead>
+<tbody>
+<tr><td>Test cases: 15 total / <span class="passed">15</span> passed / <span class="failed">0</span> failed</td></tr>
+<tr><td>Commands: 169 total / <span class="passed">169</span> passed / <span class="failed">0</span> failed / <span class="skipped">0</span> skipped</td></tr>
+</tbody></table><br>
+<table id="suiteTable" class="selenium">
+<thead><tr><td>Index of test cases</td></tr></thead>
+<tbody>
+<tr class="passed"><td><a href="#test0">signup duplicado</a></td></tr>
+<tr class="done"><td><a href="#test1">signup correcto</a></td></tr>
+<tr class="passed"><td><a href="#test2">sendnmeresetpassword incorrecto</a></td></tr>
+<tr class="passed"><td><a href="#test3">didntreceivedconfirmation incorrecto</a></td></tr>
+<tr class="passed"><td><a href="#test4">didntreceiveconfirmation correcto</a></td></tr>
+<tr class="passed"><td><a href="#test5">signin sencillo</a></td></tr>
+<tr class="passed"><td><a href="#test6">signin remember</a></td></tr>
+<tr class="passed"><td><a href="#test7">signin incorrecto</a></td></tr>
+<tr class="passed"><td><a href="#test8">signout</a></td></tr>
+<tr class="passed"><td><a href="#test9">edit your account</a></td></tr>
+<tr class="passed"><td><a href="#test10">cambio contraseña correcto</a></td></tr>
+<tr class="passed"><td><a href="#test11">cambio contraseña incorrecto</a></td></tr>
+<tr class="passed"><td><a href="#test12">cambio contraseña incorrecto 2</a></td></tr>
+<tr class="passed"><td><a href="#test13">cambio de contraseña de usuario olea</a></td></tr>
+<tr class="passed"><td><a href="#test14">forgotyourpassword correcto</a></td></tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test0"></a><table class="test_case"><thead><tr><td colspan="4">Test case: signup duplicado</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=Sign up</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_username</td>
+	<td>user1</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_email</td>
+	<td>carolo@genarin.net</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_password</td>
+	<td>1234</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_password_confirmation</td>
+	<td>1234</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test1"></a><table class="test_case"><thead><tr><td colspan="4">Test case: signup correcto</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=Sign up</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_username</td>
+	<td>chindasvinto</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_email</td>
+	<td>chindasvinto@genarin.net</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_password</td>
+	<td>1234</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_password_confirmation</td>
+	<td>1234</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test2"></a><table class="test_case"><thead><tr><td colspan="4">Test case: sendnmeresetpassword incorrecto</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>http://ualhmis15.cloudapp.net/</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Home Page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=Sign in</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=exact:Forgot your password?</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_email</td>
+	<td>marcelino@potorren.com</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertText</td>
+	<td>css=#error_explanation &gt; ul &gt; li</td>
+	<td>Email not found</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test3"></a><table class="test_case"><thead><tr><td colspan="4">Test case: didntreceivedconfirmation incorrecto</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>http://ualhmis15.cloudapp.net/users/sign_in</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=Home</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=Sign in</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=exact:Didn't receive confirmation instructions?</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_username</td>
+	<td>falocrata</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertText</td>
+	<td>css=#error_explanation &gt; ul &gt; li</td>
+	<td>Username not found</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test4"></a><table class="test_case"><thead><tr><td colspan="4">Test case: didntreceiveconfirmation correcto</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>http://ualhmis15.cloudapp.net/</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Home Page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=Sign in</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=exact:Didn't receive confirmation instructions?</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_username</td>
+	<td>olea</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertText</td>
+	<td>id=flash_notice</td>
+	<td>You will receive an email with instructions for how to confirm your email address in a few minutes.</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test5"></a><table class="test_case"><thead><tr><td colspan="4">Test case: signin sencillo</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>http://ualhmis15.cloudapp.net/</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Home Page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=Sign in</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_username</td>
+	<td>user1</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_password</td>
+	<td>1234</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Protected page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>link=Sign out</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Home Page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test6"></a><table class="test_case"><thead><tr><td colspan="4">Test case: signin remember</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>http://ualhmis15.cloudapp.net/</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Home Page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=Sign in</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_username</td>
+	<td>user1</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_password</td>
+	<td>1234</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>id=user_remember_me</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Protected page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>link=Sign out</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Home Page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test7"></a><table class="test_case"><thead><tr><td colspan="4">Test case: signin incorrecto</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>http://ualhmis15.cloudapp.net/</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Home Page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=Sign in</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_username</td>
+	<td>olea</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_password</td>
+	<td>1234</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertText</td>
+	<td>id=flash_alert</td>
+	<td>Invalid username or password.</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test8"></a><table class="test_case"><thead><tr><td colspan="4">Test case: signout</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>http://ualhmis15.cloudapp.net/</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Home Page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=Sign in</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_username</td>
+	<td>user1</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_password</td>
+	<td>1234</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Protected page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>link=Sign out</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Home Page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test9"></a><table class="test_case"><thead><tr><td colspan="4">Test case: edit your account</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>http://ualhmis15.cloudapp.net/</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Home Page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=Sign in</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_username</td>
+	<td>user1</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_password</td>
+	<td>1234</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Protected page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=Edit your account</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_password</td>
+	<td>1234</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_password_confirmation</td>
+	<td>1234</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_current_password</td>
+	<td>1234</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Home Page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>link=Sign out</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Home Page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test10"></a><table class="test_case"><thead><tr><td colspan="4">Test case: cambio contraseña correcto</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>http://ualhmis15.cloudapp.net/</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Home Page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=Sign in</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_username</td>
+	<td>user1</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_password</td>
+	<td>1234</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Protected page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=Edit your account</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_password</td>
+	<td>1111</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_password_confirmation</td>
+	<td>1111</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_current_password</td>
+	<td>1234</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Home Page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=Edit your account</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_password</td>
+	<td>1234</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_password_confirmation</td>
+	<td>1234</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_current_password</td>
+	<td>1111</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Home Page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>link=Sign out</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Home Page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test11"></a><table class="test_case"><thead><tr><td colspan="4">Test case: cambio contraseña incorrecto</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>http://ualhmis15.cloudapp.net/</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Home Page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=Sign in</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_username</td>
+	<td>user1</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_password</td>
+	<td>1234</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Protected page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=Edit your account</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_password</td>
+	<td>1234</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_password_confirmation</td>
+	<td>1234</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_current_password</td>
+	<td>1111</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertText</td>
+	<td>css=#error_explanation &gt; ul &gt; li</td>
+	<td>Current password is invalid</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>link=Sign out</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Home Page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test12"></a><table class="test_case"><thead><tr><td colspan="4">Test case: cambio contraseña incorrecto 2</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>http://ualhmis15.cloudapp.net/</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Home Page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=Sign in</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_username</td>
+	<td>user1</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_password</td>
+	<td>1234</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Protected page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=Edit your account</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_password</td>
+	<td>1111</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_password_confirmation</td>
+	<td>1234</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_current_password</td>
+	<td>1234</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertText</td>
+	<td>css=#error_explanation &gt; ul &gt; li</td>
+	<td>Password confirmation doesn't match Password</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>link=Sign out</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Home Page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test13"></a><table class="test_case"><thead><tr><td colspan="4">Test case: cambio de contraseña de usuario olea</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>http://ualhmis15.cloudapp.net/</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Home Page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=Sign in</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_username</td>
+	<td>admin</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_password</td>
+	<td>1234</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Protected page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=Admin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=Users</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="comment">
+	<td colspan="4">ahora toca probar a cambiar contraseña equivocada</td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=Olea</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_password</td>
+	<td>1111</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_password_confirmation</td>
+	<td>1111</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Users Admin | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertText</td>
+	<td>id=flash_notice</td>
+	<td>olea updated.</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>link=Sign out</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Home Page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test14"></a><table class="test_case"><thead><tr><td colspan="4">Test case: forgotyourpassword correcto</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>http://ualhmis15.cloudapp.net/</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Home Page | Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=Sign in</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=exact:Forgot your password?</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=user_email</td>
+	<td>ismael@olea.org</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Hmislogin</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertText</td>
+	<td>id=flash_notice</td>
+	<td>You will receive an email with instructions on how to reset your password in a few minutes.</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+</body></html>
